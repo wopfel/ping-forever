@@ -28,7 +28,7 @@ while ( $runloop ) {
         
         my $result = $p->ping( $host );
         
-        if ( $result != $results{$host} ) {
+        if ( ! defined $results{$host}  or  $result != $results{$host} ) {
             print scalar localtime;
             print ": ";
             print "Ping ";
