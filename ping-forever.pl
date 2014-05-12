@@ -37,10 +37,12 @@ while ( $runloop ) {
             print "\n";
         }
 
+        # Store result
         $results{$host} = $result;
         
     }
-    
+
+    # Wait 1 second
     sleep 1;
 
 }
